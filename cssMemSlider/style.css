@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
 }
 
 .slider {
+    margin-top: 180px;
     position: relative;
     overflow: hidden;
     max-width: 600px;
@@ -49,18 +51,18 @@ body {
     justify-content: center;
     position: absolute;    
     bottom: 80px;
-    width: 100%;
-    height: 20px;
+    right: 0;
+    height: 25px;
     
 }
 
-.slider-nav-item {
+.slider-nav-item {    
     display: flex;
     align-items: center;
-    width: 20px;
-    height: 20px;
-    border: 4px solid rgb(17, 127, 179);
-    background-color: burlywood;
+    width: 25px;
+    height: 25px;
+    border: 4px solid rgb(4, 79, 114);
+    background-color: rgb(4, 79, 114);
     border-radius: 50%;
     margin: 5px;
     cursor: pointer;
@@ -69,7 +71,7 @@ body {
 }
 
 .slider-nav-item:hover {
-    background-color: aqua;
+    background-color: rgb(236, 237, 246);
 }
 
 input#dot1:checked ~ .slider .mems .mem {
@@ -86,4 +88,20 @@ input#dot3:checked ~ .slider .mems .mem {
 
 input#dot4:checked ~ .slider .mems .mem {
     margin-left: -300%;
+}
+
+input#dot1:checked ~ .slider .slider-nav #radio1 {
+    background-color: rgb(188, 177, 248);
+}
+
+input#dot2:checked ~ .slider .slider-nav #radio2 {
+    background-color: rgb(188, 177, 248);
+}
+
+input#dot3:checked ~ .slider .slider-nav #radio3 {
+    background-color: rgb(188, 177, 248);
+}
+
+input#dot4:checked ~ .slider .slider-nav #radio4 {
+    background-color: rgb(188, 177, 248);
 }
