@@ -43,7 +43,27 @@ body {
 .mem {
     max-width: 100%;
     height: auto; 
+    transition: all 1s ease;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;     
     
+}
+
+.nav-wrapper p {
+    justify-content: center;
+    position: absolute;    
+    bottom: 80px;
+    left: 0;
+    height: 25px;
+    opacity: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    transition: all 1.5s ease;
+    font-weight: 700;
+    color: rgb(8, 36, 87);
 }
 
 .slider-nav {
@@ -52,8 +72,7 @@ body {
     position: absolute;    
     bottom: 80px;
     right: 0;
-    height: 25px;
-    
+    height: 25px;    
 }
 
 .slider-nav-item {    
@@ -104,4 +123,20 @@ input#dot3:checked ~ .slider .slider-nav #radio3 {
 
 input#dot4:checked ~ .slider .slider-nav #radio4 {
     background-color: rgb(188, 177, 248);
+}
+
+input#dot1:checked ~ .slider .nav-wrapper .mem-title #title1 {
+    opacity: 1;
+}
+
+input#dot2:checked ~ .slider .nav-wrapper .mem-title #title2 {
+    opacity: 1;
+}
+
+input#dot3:checked ~ .slider .nav-wrapper .mem-title #title3 {
+    opacity: 1;
+}
+
+input#dot4:checked ~ .slider .nav-wrapper .mem-title #title4 {
+    opacity: 1;
 }
