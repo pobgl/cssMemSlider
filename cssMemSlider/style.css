@@ -30,6 +30,12 @@ body {
     height: 650px;
 }
 
+
+@media (max-width: 320px) {
+    .slider {max-width: 315px; height: 450px;}
+}
+  
+
 .mems {
     display: flex;
     width: 400%;
@@ -73,6 +79,11 @@ body {
     bottom: 80px;
     right: 0;
     height: 25px;    
+}
+
+@media (max-width: 320px) {
+    .nav-wrapper p {bottom: 80px;}
+    .slider-nav {bottom: 10px; right: 25%;}
 }
 
 .slider-nav-item {    
