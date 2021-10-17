@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <input checked type="radio" name="respond" id="desktop">
+            <div class="slider">                
+                <div class="mem-slides">
+                    <div class="hidden">
+                        <div class="mem-image">
+                            <div><img src="assets/1.jpg" alt="mem1"></div>
+                            <div><img src="assets/2.jpg" alt="mem2"></div>
+                            <div><img src="assets/3.jpg" alt="mem3"></div>
+                            <div><img src="assets/4.jpg" alt="mem4"></div>                        
+                        </div>
+                    </div>
+                </div>
+                <div id="pointed">
+                    <label for="slider-dot1"></label>
+                    <label for="slider-dot2"></label>
+                    <label for="slider-dot3"></label>
+                    <label for="slider-dot4"></label>                
+                </div>
+                <div id="active">
+                    <label for="slider-dot1"></label>
+                    <label for="slider-dot2"></label>
+                    <label for="slider-dot3"></label>
+                    <label for="slider-dot4"></label>                
+                </div>
+                <input checked type="radio" name="slider" id="slider-dot1">
+                <input type="radio" name="slider" id="slider-dot2">
+                <input type="radio" name="slider" id="slider-dot3">
+                <input type="radio" name="slider" id="slider-dot4">
+            </div>
+        </div>
+    </body>
 </html>
