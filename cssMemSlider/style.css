@@ -9,6 +9,7 @@ body {
 }
 
 .wrapper {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,23 +19,25 @@ body {
 }
 
 .wrapper input {    
-    position: absolute;
+    position: relative;
     visibility: hidden;
 }
 
 .slider {
-    margin-top: 180px;
+    margin-top: 4rem;
     position: relative;
     overflow: hidden;
-    max-width: 600px;
-    height: 650px;
+    max-width: 37rem;
+    max-height: 40rem;
 }
 
 
 @media (max-width: 320px) {
-    .slider {max-width: 315px; height: 450px;}
+    .slider {
+        max-width: 19rem;
+        max-height: 28rem;
+    } 
 }
-  
 
 .mems {
     display: flex;
@@ -59,14 +62,15 @@ body {
 }
 
 .nav-wrapper p {
+    display: flex;
     justify-content: center;
-    position: absolute;    
-    bottom: 80px;
+    position: relative;    
+    bottom: 0;
     left: 0;
-    height: 25px;
+    height: 1.5rem;
     opacity: 0;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-size: 1.5rem;
     transition: all 1.5s ease;
     font-weight: 700;
     color: rgb(8, 36, 87);
@@ -75,29 +79,43 @@ body {
 .slider-nav {
     display: flex;    
     justify-content: center;
-    position: absolute;    
-    bottom: 80px;
+    position: relative;    
+    bottom: 0;
     right: 0;
-    height: 25px;    
+    height: 1.5rem;    
 }
 
 @media (max-width: 320px) {
-    .nav-wrapper p {bottom: 80px;}
-    .slider-nav {bottom: 10px; right: 25%;}
+    .nav-wrapper {
+        flex-direction: column;
+    }
+
+    .nav-wrapper p {
+        bottom: 5rem;
+    }
+
+    .slider-nav {
+        margin: 0 auto;
+        bottom: 0.75rem;        
+    }
 }
 
 .slider-nav-item {    
     display: flex;
     align-items: center;
-    width: 25px;
-    height: 25px;
-    border: 4px solid rgb(4, 79, 114);
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.25rem solid rgb(4, 79, 114);
     background-color: rgb(4, 79, 114);
     border-radius: 50%;
-    margin: 5px;
+    margin: 0.5rem;
     cursor: pointer;
-    transition: all .5s ease;
+    transition: all .1s ease;
     
+}
+
+input {
+    width: 0;
 }
 
 .slider-nav-item:hover {
@@ -136,12 +154,29 @@ input#dot4:checked ~ .slider .slider-nav #radio4 {
     background-color: rgb(188, 177, 248);
 }
 
+.mem-title #title1 {
+    top: 0;
+}
+
+.mem-title #title2 {
+    top: -1.5rem;
+}
+
+.mem-title #title3 {
+    top: -3rem;
+}
+
+.mem-title #title4 {
+    top: -4.5rem;
+}
+
 input#dot1:checked ~ .slider .nav-wrapper .mem-title #title1 {
     opacity: 1;
 }
 
 input#dot2:checked ~ .slider .nav-wrapper .mem-title #title2 {
     opacity: 1;
+    
 }
 
 input#dot3:checked ~ .slider .nav-wrapper .mem-title #title3 {
