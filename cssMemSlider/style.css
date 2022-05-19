@@ -87,7 +87,8 @@ body {
 
 @media (max-width: 320px) {
     .nav-wrapper {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        padding-top: 1rem;
     }
 
     .nav-wrapper p {
@@ -154,6 +155,26 @@ input#dot4:checked ~ .slider .slider-nav #radio4 {
     background-color: rgb(188, 177, 248);
 }
 
+input#dot1:active ~ .slider .slider-nav #radio1 {
+    background-color: rgb(255, 238, 1);
+    border-color: rgb(255, 238, 1);
+}
+
+input#dot2:active ~ .slider .slider-nav #radio2 {
+    background-color: rgb(255, 238, 1);
+    border-color: rgb(255, 238, 1);
+}
+
+input#dot3:active ~ .slider .slider-nav #radio3 {
+    background-color: rgb(255, 238, 1);
+    border-color: rgb(255, 238, 1);
+}
+
+input#dot4:active ~ .slider .slider-nav #radio4 {
+    background-color: rgb(255, 238, 1);
+    border-color: rgb(255, 238, 1);
+}
+
 .mem-title #title1 {
     top: 0;
 }
@@ -185,4 +206,4 @@ input#dot3:checked ~ .slider .nav-wrapper .mem-title #title3 {
 
 input#dot4:checked ~ .slider .nav-wrapper .mem-title #title4 {
     opacity: 1;
-}
+}    
